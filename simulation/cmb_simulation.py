@@ -339,12 +339,14 @@ def plot_polarisation_maps(Q_map, U_map, title_suffix):
 
 if __name__ == "__main__":
     # 1. Generate Theoretical Spectra
-    ell, Cl_EE, Cl_BB = get_theory_spectra(lmax=3000, r_scale=0.01)
+    r_scale = 0.01
+    lmax = 3000
+    ell, Cl_EE, Cl_BB = get_theory_spectra(lmax, r_scale)
 
     # Save theory to disk (using local directory to ensure portability)
     output_dir = "./output"
     os.makedirs(output_dir, exist_ok=True)
-    np.savetxt(f"{output_dir}/Cl_theory.txt", np.column_stack([ell, Cl_EE, Cl_BB]),
+    np.savetxt(f"{output_dir}/Cl_theory_{r_scale}.txt", np.column_stack([ell, Cl_EE, Cl_BB]),
                header="ell   Cl_EE[μK^2]   Cl_BB[μK^2]")
 
     # 2. Simulate Primordial Maps
