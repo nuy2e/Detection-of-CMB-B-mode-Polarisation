@@ -160,7 +160,7 @@ for i in range(total_samples):
         dust_model = f"d{random.randint(0, 9)}"
     else:
         r_val = 1000
-        centre_loc = (0, 0)
+        centre_loc = (316, -58)
         rot_angle = 0
         dust_model = f"d1"
 
