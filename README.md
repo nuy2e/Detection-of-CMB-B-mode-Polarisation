@@ -47,4 +47,5 @@ To run this pipeline, you need the following scientific libraries:
 ## Author
 * **Min Ki Hong**
 * **Institution:** School of Physics and Astronomy, University of Manchester (2025/2026)
-* **Note:** This codebase represents the computational appendix of the dissertation: *"Detection of CMB B-mode Polarisation: Experimental Challenges and Computational Methods."*
+* **Note:** This project was supervised by a Faculty member of the School of Physics and Astronomy, University of Manchester. This codebase represents the computational appendix of the dissertation: "Detection of CMB $B$-mode Polarisation: Experimental Challenges and Computational Methods.
+  
